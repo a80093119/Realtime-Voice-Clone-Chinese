@@ -6,7 +6,7 @@ from pathlib import Path
 from tqdm import tqdm
 import numpy as np
 from encoder import inference as encoder
-from synthesizer.preprocess_speaker import preprocess_speaker_general
+from synthesizer.preprocess_speaker import preprocess_speaker_general, preprocess_speaker
 
 data_info = {
     "aidatatang_200zh": {
@@ -18,7 +18,7 @@ data_info = {
         "subfolders": ["train"],
         "trans_filepath": "train/TRANS.txt",
         "speak_func": preprocess_speaker_general
-    },
+    }
 }
 
 def preprocess_dataset(datasets_root: Path, out_dir: Path, n_processes: int,

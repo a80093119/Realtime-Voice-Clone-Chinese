@@ -7,7 +7,7 @@ import argparse
 
 recognized_datasets = [
     "aidatatang_200zh",
-    "magicdata",
+    "magicdata"
 ]
 
 if __name__ == "__main__":
